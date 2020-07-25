@@ -38,7 +38,7 @@ async function getQuoteFromApi() {
     quoteText.innerText = data.quoteText;
     removeLoadingSpinner();
   } catch (error) {
-    getQuote();
+    getQuoteFromApi();
   }
 }
 
